@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css?family=Asap:400,600,700');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #24272E;
+  text-align: center;
+  color: white;
+  font-family: Asap;
+}
+/************* title ***************/
+header {
+  background-color: #fff;
+  padding: 1.5em 0;
+}
+
+header > h1 {
+  color: #25272E;
+  text-align: center;
+  font-family: Asap;
+}
+/*********** scoreboard ************/
+.scoreboard {
+  border: #fff 3px solid;
+  width: 250px;
+  height: 6em;
+  margin: 2em auto; /* margin auto on left and right centers the div */
+  position: relative;
+  color: #fff;
+  border-radius: .3em;
+}
+
+.scoreboard > p {
+  font-size: 3em;
+  text-align: center;
+  font-weight: 600;
+  padding-top: .3em;
+}
+
+.badge {
+  background-color: #e2584d;
+  display: inline-block;
+  font-weight: 700;
+  color: #fff;
+  padding: 0.1em .7em;
+}
+
+#user {
+  position: absolute;
+  top: 2em;
+  left: -2em;
+}
+
+#comp {
+  position: absolute;
+  left: 13.5em;
+  top: 2em;
+}
+
+/********** reset-button ***********/
+#reset-button {
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #e2584d;
+  padding: 0.1em .7em;
+  font-weight: 700;
+  display: inline-block;
+  margin-bottom: 2em;
+  font-size: 1.5em;
+}
+
+#reset-button:hover {
+  color: #e2584d;
+  background-color: #ffffff;
+}
+
+/********** result-text ***********/
+#result-text {
+  font-size: 2em;
+}
+
+/************ icons ***************/
+
+.choices {
+  margin-top: 3em;
+}
+
+.choice {
+  border: 3px solid #fff;
+  display: inline-block;
+  border-radius: 50%;
+  padding: .5em;
+  margin: 0 1.5em;
+  transition: all .3s ease;
+}
+
+.choice:hover {
+  cursor: pointer;  /* change the cursor when it hovers the icon */
+  background: #e2584d;
+}
+
+/********* action-message *********/
+#action-message {
+  font-size: 1.3em;
+  font-weight: 700;
+  margin-top: 1.7em;
+}
